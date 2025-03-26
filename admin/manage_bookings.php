@@ -1,4 +1,5 @@
-<?php include("../functions.php"); ?>
+<?php include("../functions.php"); 
+include("../config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
