@@ -1,0 +1,84 @@
+/* General Styles */
+* {
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+body {
+    position: relative; /* Position relative for the pseudo-element */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../assets/images/background.jpg') no-repeat center center; /* Add your background image */
+    background-size: cover; /* Cover the entire background */
+    filter: blur(8px); /* Apply blur effect */
+    z-index: -1; /* Place behind other content */
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Heading Styles */
+h2 {
+    color: #d81b60; /* Baby pink color for headings */
+    font-size: 2.5em; /* Larger font size for main heading */
+}
+
+h3 {
+    color: #f06292; /* Lighter pink color for subheadings */
+    font-size: 1.8em; /* Slightly larger font size for subheadings */
+}
+
+/* Paragraph Styles */
+p {
+    color: #555; /* Darker gray for paragraph text for better readability */
+    font-size: 1.1em; /* Slightly larger font size for paragraphs */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+ul li {
+    margin: 10px 0; /* Space between list items */
+    font-size: 1.1em; /* Font size for list items */
+}
+
+/* Link Styles */
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #d81b60; /* Baby pink color */
+    font-weight: bold; /* Bold links */
+}
+
+a:hover {
+    color: #f06292; /* Change color on hover */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px; /* Space above footer */
+    padding: 10px 0; /* Padding for footer */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for footer */
+    border-radius: 10px; /* Rounded corners for footer */
+}
